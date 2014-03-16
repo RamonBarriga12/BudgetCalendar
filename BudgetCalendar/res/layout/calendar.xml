@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/White" >
+
+    <LinearLayout
+        android:id="@+id/lytMain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnLeft"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:text="@string/left" >
+        </Button>
+
+        <TextView
+            android:id="@+id/tvMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textSize="20dp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/btnRight"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:text="@string/right" >
+        </Button>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/lytMain"
+        android:background="@color/White"
+        android:gravity="center"
+        android:horizontalSpacing="2dp"
+        android:numColumns="7"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2dp" />
+
+</RelativeLayout>
